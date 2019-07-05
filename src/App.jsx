@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './App.scss';
 
-function App() {
-  return (
-    <h1> Welcome to Author&apos;s Haven</h1>
-  );
+// eslint-disable-next-line react/prefer-stateless-function
+export default class App extends Component {
+  render() {
+    return <h1> Welcome to Author&apos;s Haven</h1>;
+  }
 }
-
-export default App;
