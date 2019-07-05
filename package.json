@@ -18,7 +18,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/andela/ah-frontend-realers/issues"
-  },"jest": {
+  },
+  "jest": {
     "setupFiles": [
       "./src/setupTests.js"
     ],
