@@ -4,7 +4,7 @@ import reducers from '../reducer/index';
 
 const enhacers = compose(
   applyMiddleware(thunk),
-  window.devToolsExtension && window.devToolsExtension(),
+  window.devToolsExtension ? window.devToolsExtension() : f => f,
 );
 const store = createStore(
   reducers, enhacers,
