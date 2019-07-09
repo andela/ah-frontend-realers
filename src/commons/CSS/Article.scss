@@ -1,0 +1,69 @@
+@import '../../commons/assets/variables/font.scss';
+@import '../../commons/assets/variables/colors.scss';
+
+.article-box {
+  border-radius: 0;
+  border-width: 0;
+  font-size: 14px;
+  width: 350px;
+
+  img {
+    border-radius: 0;
+    height: 183px;
+  }
+
+  .card-body {
+    padding: 1.25rem 0;
+  }
+
+  .card-title {
+    color: $default-gray;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: .1rem;
+    text-align: left;
+  }
+
+  .card-text,
+  .card-link {
+    color: $default-gray;
+    font-family: $lato-font;
+    font-weight: 100;
+    margin-bottom: .2rem;
+    max-width: 43ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .row {
+    margin-top: -5px;
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+  }
+
+  .dv-star-rating-star {
+    font-size: 1.2em !important;
+    margin-left: -3px;
+    padding: 2px 2px 0 2px;
+  }
+
+  .dv-star-rating-full-star {
+    color: #121111 !important;
+  }
+
+  .dv-star-rating-empty-star {
+    color: $light-gray !important;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+}

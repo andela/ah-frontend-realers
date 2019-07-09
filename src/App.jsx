@@ -1,9 +1,20 @@
-import React, { Component } from 'react';
+/* eslint-disable import/no-named-as-default */
+import React from 'react';
 import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HeaderSection from './commons/components/HeaderSection';
+import FooterSection from './commons/components/FooterSection';
+import Landing from './Landing/containers/Landing';
 
-// eslint-disable-next-line react/prefer-stateless-function
-export default class App extends Component {
-  render() {
-    return <h1> Welcome to Author&apos;s Haven</h1>;
-  }
+export default function App() {
+  return (
+    <Router>
+      <HeaderSection />
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/about" component={Landing} />
+      </Switch>
+      <FooterSection />
+    </Router>
+  );
 }

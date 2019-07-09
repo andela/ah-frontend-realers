@@ -1,0 +1,74 @@
+@import '../../commons/assets/variables/font.scss';
+@import '../../commons/assets/variables/colors.scss';
+@import '../../commons/assets/variables/mixins.scss';
+
+.recommended-articles {
+  border-top: 1px solid $light-gray;
+  margin-bottom: 30px;
+
+  .container {
+    max-width: 1240px !important;
+  }
+
+  .section-title {
+    color: $primary-blue;
+    font-family: $lato-font;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .small-version {
+    border: 1px solid $primary-blue;
+  }
+
+}
+
+.sm {
+  .article-box {
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  img {
+    height: 85px;
+    margin-right: 10px;
+    width: 95px;
+  }
+
+  .card-body {
+    padding: 0 5px;
+  }
+
+  .card-title {
+    margin-bottom: .1rem;
+  }
+
+  .card-text {
+    margin-bottom: -.1rem;
+    max-width: 30ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.call-for-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.article-display-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}

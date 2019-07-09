@@ -1,0 +1,13 @@
+@import '../assets/variables/colors.scss';
+@import '../assets/variables/font.scss';
+
+.custom-btn {
+  background-color: $primary-blue !important;
+  border-color: lighten($primary-blue, 10%) !important;
+  border-radius: 0%;
+  color: $white;
+  font-family: $source-san-font;
+  font-size: 18px;
+  font-weight: 100;
+  height: 41px;
+}
