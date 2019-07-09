@@ -11,14 +11,16 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "modules":true
         },
         "ecmaVersion": 2018
     },
     "plugins": [
         "react"
     ],
-    "rules": {
-    }
+    "rules": {}
 }
