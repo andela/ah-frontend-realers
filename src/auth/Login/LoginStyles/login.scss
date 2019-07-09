@@ -1,6 +1,6 @@
 
-@import '../../commons/assets/variables/font.scss';
-@import '../../commons/assets/variables/colors.scss';
+@import '../../../commons/assets/variables/font.scss';
+@import '../../../commons/assets/variables/colors.scss';
 
 .Login-container{
   margin: 10px 0 20px 0;
@@ -64,37 +64,31 @@
     margin-left: 20%;
     font-weight:100;
   }
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-    margin-left: 10px;
-    font-size: 23px;
-    width: 30px;
-    padding: 5px;
-    border-radius: 2px;
-    text-align: center;
-    text-decoration: none;
-
+  .facebookButton{
+    width:32px;
+    float: left;
   }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    margin-left: 20px;
-    font-size: 23px;
-    width: 30px;
-    padding: 5px;
-    border-radius: 2px;
-    text-decoration: none;
 
-
+  .kep-login-facebook.metro {
+    width: 32px;
   }
-  .fa-google{
-    color:#d34836;
-    margin-left: 3%;
-    font-size: 30px;
-    margin-top: 10px;
-    text-decoration: none;
+  .GoogleButton {
+    width: 32px;
+    float: left;
+    margin-left: 5px;
 
+    button {
+      background-color: transparent !important;
+      color: rgba(0, 0, 0, 0.54) !important;
+      box-shadow: transparent 0px 0px 0px 0px !important;
+      border-radius: 0 !important;
+      border: 0px solid transparent !important;
+
+      div {
+        padding: 10px !important;
+        border-radius: 2px;
+      }
+    }
   }
   .errors{
     color: red;
