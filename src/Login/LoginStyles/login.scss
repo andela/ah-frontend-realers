@@ -1,0 +1,112 @@
+
+@import '../../commons/assets/variables/font.scss';
+@import '../../commons/assets/variables/colors.scss';
+
+.Login-container{
+  margin: 10px 0 20px 0;
+
+  .myform{
+  width: 517px;
+  min-height: 400px;
+  border: #cccccc solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  }
+
+  .heading {
+    width: 367px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 99%;
+  }
+  .form-input input, button{
+    margin-top: 4px;
+    width: 297px;
+    margin-left: 99px;
+    height: 35px;
+    padding: 6px 6px 6px 10px;
+    font-size: 14px;
+
+  }
+  .mypara{
+    color:#606060;
+    text-align: left;
+    font-family: 'Source Sans Pro';
+    margin-left: 100px;
+    margin-top: 20px;
+    font-weight:100;
+  }
+
+  ::placeholder{
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: Regular;
+  }
+  button{
+    color: #eaeff0;
+    background-color: #00a4d3;
+    font-size: 18px;
+    margin-top: 4px;
+    height: 38px;
+    margin-bottom: 10px;
+    font-weight: 100;
+   font-family: $lato-font;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }  
+  .mypara2{
+    color: #00a4d3;
+    font-family: 'Lato';
+    font-size: 18px;
+    margin-left: 20%;
+    font-weight:100;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 10px;
+    font-size: 23px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin-left: 20px;
+    font-size: 23px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+
+
+  }
+  .fa-google{
+    color:#d34836;
+    margin-left: 3%;
+    font-size: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+
+  }
+  .errors{
+    color: red;
+    text-align: center;
+  }
+  .loader {
+    position: fixed;
+    top: 600px;
+    right: 0;
+    bottom: 600px;
+    left: 0;
+    background: white;
+
+  }
+}

@@ -2,10 +2,14 @@ import {
   createStore, applyMiddleware, compose, combineReducers,
 } from 'redux';
 import thunk from 'redux-thunk';
+
 import LatestArticleReducer from '../Landing/redux/reducers/latestArticlesReducer';
+import loginReducer from '../Login/redux/reducers/loginReducer';
+
 
 const reducers = combineReducers({
   latest_articles: LatestArticleReducer,
+  login: loginReducer,
 });
 
 const enhancers = compose(
@@ -15,5 +19,4 @@ const enhancers = compose(
 const store = createStore(
   reducers, enhancers,
 );
-
 export default store;
