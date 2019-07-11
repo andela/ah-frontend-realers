@@ -11,6 +11,7 @@ import LoginContainer from './auth/Login/containers/LoginContainer';
 import 'react-toastify/dist/ReactToastify.css';
 import SignUp from './auth/signup/components/SignUp';
 import AllArticles from './Articles/components/AllArticles';
+import ResetPasswordContainer from './auth/passwordreset/components/ResetComponent';
 import store from './Mainstore/Store';
 import history from './commons/history';
 
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/about" component={Landing} />
           <Route path="/signup" component={SignUp} />
           <Route path="/articles" component={AllArticles} />
+          <Route path="/reset" component={ResetPasswordContainer} />
         </Switch>
         <FooterSection />
       </Router>
