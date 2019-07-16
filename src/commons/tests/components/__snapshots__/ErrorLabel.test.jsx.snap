@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorLabel Component should match the snapshot 1`] = `
+<Alert
+  className="error-box"
+  closeLabel="Close alert"
+  show={true}
+  transition={[Function]}
+  variant="warning"
+>
+  Hi, 
+  ,  
+  Try refreshing the page.
+</Alert>
+`;

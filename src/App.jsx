@@ -7,6 +7,7 @@ import FooterSection from './commons/components/FooterSection';
 import Landing from './Landing/containers/Landing';
 import LoginContainer from './Login/containers/LoginContainer';
 import 'react-toastify/dist/ReactToastify.css';
+import SignUp from './auth/signup/components/SignUp';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Switch>
         <Route path="/" exact component={Landing} />
         <Route path="/about" component={Landing} />
+        <Route path="/signup" component={SignUp} />
       </Switch>
       <FooterSection />
     </Router>

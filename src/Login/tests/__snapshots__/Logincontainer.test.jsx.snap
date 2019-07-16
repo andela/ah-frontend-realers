@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loginContainer Component matches snapshot 1`] = `
+<Login
+  email=""
+  errors={
+    Object {
+      "invalid_email": false,
+    }
+  }
+  handleSubmit={[Function]}
+  isLoading={false}
+  isLoggingIn={false}
+  loginFailed={false}
+  onChange={[Function]}
+  password=""
+/>
+`;

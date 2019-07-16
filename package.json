@@ -9,8 +9,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack -p",
-    "test": "jest",
     "lint": "eslint src",
+    "test": "jest --watchAll",
+    "test:coverage": "jest --env=jsdom --coverage --no-cache --coverageDirectory=./test-reports/",
     "lint:fix": "eslint --fix src"
   },
   "repository": {
@@ -38,6 +39,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
+    "@testing-library/react": "^8.0.5",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -53,6 +55,8 @@
     "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
+    "react-toastify": "^5.3.1",
+    "redux-mock-store": "^1.5.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
