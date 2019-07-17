@@ -9,8 +9,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack -p",
-    "lint": "eslint",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src"
   },
   "repository": {
     "type": "git",
