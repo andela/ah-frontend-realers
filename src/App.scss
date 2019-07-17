@@ -1,5 +1,13 @@
-$primary-color: #0000ff;
+
+@import './commons/assets/variables/font.scss';
+@import '././commons/assets/variables/colors.scss';
+@import '~bootstrap/scss/bootstrap';
 
 h1 {
   color: $primary-color;
+  font-family: $lato-font;
+}
+
+body {
+  background-color: $main-background;
 }

@@ -1,0 +1,56 @@
+@import '../assets/variables/colors.scss';
+@import '../assets/variables/font.scss';
+
+header {
+  background: $dark;
+  height: 350px;
+  padding: 20px;
+}
+
+.nav-section {
+  margin: 0 50px;
+
+  a {
+    color: $default-gray;
+    font-family: $source-san-font;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: $default-gray;
+    }
+  }
+
+}
+
+
+.menu-section {
+  padding: 20px 0;
+
+  a {
+    color: $default-gray;
+    font-family: $source-san-font;
+    font-size: 16px;
+    padding: 2px 20px;
+  }
+
+  .nav-item {
+    margin-left: -15px;
+
+    &::before {
+      margin-right: -10px;
+    }
+
+    &::after {
+      color: $default-gray;
+      content: '|';
+      margin-left: 25px;
+    }
+  }
+}
+
+.menu-section a:last-child .nav-item::after {
+  color: $default-gray;
+  content: '';
+  margin-left: 25px;
+}

@@ -1,0 +1,16 @@
+@import '../assets/variables/colors.scss';
+@import '../assets/variables/font.scss';
+
+.loading {
+  left: 47%;
+  position: absolute;
+  top: 55%;
+
+  .spinner-border {
+    width: 5rem;
+    height: 5rem;
+    border-color:$primary-color;
+    vertical-align: text-bottom;
+    border-right-color: transparent;
+}
+}

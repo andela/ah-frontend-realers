@@ -1,0 +1,48 @@
+@import '../assets/variables/colors.scss';
+@import '../assets/variables/font.scss';
+
+.search-box {
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+  font-family: $source-san-font;
+  width: auto;
+
+  .search-icon {
+    background-color: transparent;
+    border-radius: 0;
+    border-right: 0;
+    font-family: $source-san-font;
+    }
+
+  input.search-input {
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    font-size: 20px;
+    height: 54px;
+    width: 428px;
+  }
+
+  button.search-btn {
+    background-color: $primary-blue;
+    border-color: $border-color;
+    border-left: 1px solid $border-color;
+    border-radius: 0;
+    color: $white;
+    height: 54px;
+    width: 158px;
+    }
+
+  .mr-sm-2,
+  .mx-sm-2 {
+    margin-right: 0 !important;
+  }
+
+  input {
+    &:focus {
+      border: 0;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+}

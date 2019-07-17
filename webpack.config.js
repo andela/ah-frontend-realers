@@ -1,7 +1,13 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: './src/index.jsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/',
+  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
@@ -23,8 +29,17 @@ module.exports = {
         loader: 'html-loader',
       }],
     },
-
-
+    {
+      test: /\.(jpg|png|gif|svg|pdf|ico)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name]-[hash:8].[ext]',
+          },
+        },
+      ],
+    },
     ],
   },
   plugins: [
@@ -36,5 +51,8 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 };
