@@ -1,7 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
@@ -20,7 +16,7 @@ function LatestArticles({ latestArticles, fetchStatus }) {
             <Container>
               <div className="article-display-box">
                 {
-                  latestArticles.map(article => (
+                  latestArticles.reverse().map(article => (
                     <Article key={article.slug} article={article} />
                   ))
                 }

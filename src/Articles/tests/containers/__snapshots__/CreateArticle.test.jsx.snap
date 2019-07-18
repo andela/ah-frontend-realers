@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateArticle Component should match the snapshot 1`] = `
+<div
+  className="create-article"
+>
+  <h2
+    className="section-title"
+  >
+    Create Article
+  </h2>
+  <Form
+    inline={false}
+    onSubmit={[Function]}
+  >
+    <FormGroup
+      controlId="formBasicTitle"
+    >
+      <FormControl
+        isInvalid={null}
+        name="articleTitle"
+        onChange={[Function]}
+        placeholder="Article Title"
+        required={true}
+        type="text"
+        value=""
+      />
+      <FormText
+        className="text-muted"
+      />
+    </FormGroup>
+    <FormGroup
+      controlId="exampleForm.ControlTextarea1"
+    >
+      <FormControl
+        as="textarea"
+        isInvalid={null}
+        name="articleBody"
+        onChange={[Function]}
+        placeholder="Article body"
+        required={true}
+        rows="15"
+        value=""
+      />
+      <FormText
+        className="text-muted"
+      />
+    </FormGroup>
+    <FormGroup
+      controlId="formBasicTag"
+    >
+      <FormControl
+        isInvalid={null}
+        name="articleTags"
+        onChange={[Function]}
+        placeholder="Article Tags"
+        type="text"
+        value=""
+      />
+      <FormText
+        className="text-muted"
+      />
+    </FormGroup>
+    <FormGroup>
+      <FormLabel
+        column={false}
+        htmlFor="articlePhoto"
+        srOnly={false}
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <h5
+          className="article-photo"
+        >
+          <span>
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              fixedWidth={false}
+              flip={null}
+              icon={
+                Object {
+                  "icon": Array [
+                    512,
+                    512,
+                    Array [],
+                    "f030",
+                    "M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z",
+                  ],
+                  "iconName": "camera",
+                  "prefix": "fas",
+                }
+              }
+              inverse={false}
+              listItem={false}
+              mask={null}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size={null}
+              spin={false}
+              symbol={false}
+              title=""
+              transform={null}
+            />
+             
+            Add Photo
+          </span>
+          <span
+            className="article-photo-name"
+          >
+            No Photo selected
+          </span>
+        </h5>
+        <FormControl
+          accept=".png,.jpg"
+          id="articlePhoto"
+          name="articlePhoto"
+          onChange={[Function]}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          type="file"
+        />
+      </FormLabel>
+      <Bootstrap(Row)
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <Col
+          sm={12}
+        >
+          <Bootstrap(ProgressBar)
+            animated={true}
+            label="0%"
+            now={0}
+          />
+        </Col>
+      </Bootstrap(Row)>
+    </FormGroup>
+    <Bootstrap(Row)
+      className="status-section"
+    >
+      <Col
+        sm={12}
+      >
+        <ErrorLabel
+          message=""
+          tip="edit your article body"
+        />
+      </Col>
+    </Bootstrap(Row)>
+    <Bootstrap(Row)>
+      <Col
+        className="call-for-action"
+        sm={12}
+      >
+        <Component
+          color="#00a4d3"
+          component="div"
+          loaded={true}
+          loadedClassName="loadedContent"
+          parentClassName="loader"
+        >
+          <Button
+            active={false}
+            disabled={true}
+            id="submitForm"
+            type="submit"
+            variant="primary"
+          >
+            Create Article
+          </Button>
+        </Component>
+      </Col>
+    </Bootstrap(Row)>
+  </Form>
+</div>
+`;

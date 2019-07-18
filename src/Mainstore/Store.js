@@ -8,14 +8,16 @@ import allArticleReducer from '../Articles/redux/reducers/allArticlesReducer';
 import loginReducer from '../auth/Login/redux/reducers/loginReducer';
 import resetPasswordReducer from '../auth/passwordreset/redux/reducers/postReducer';
 import SearchArticleReducer from '../Articles/redux/reducers/SearchArticleReducer';
+import CreateArticleReducer from '../Articles/redux/reducers/CreateArticleReducer';
 
 const reducers = combineReducers({
   latest_articles: LatestArticleReducer,
-  resetPassword: resetPasswordReducer,
+  createArticle: CreateArticleReducer,
   login: loginReducer,
   signUpUser: signUpReducer,
   allArticleReducer,
   searchedArticles: SearchArticleReducer,
+  resetPassword: resetPasswordReducer,
 });
 
 const enhancers = compose(

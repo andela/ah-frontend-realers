@@ -19,7 +19,7 @@ CustomButton.propTypes = {
 
 CustomButton.defaultProps = {
   btnlabel: 'stranger',
-  link: '/articles',
+  link: '#',
 };
 
 export default CustomButton;

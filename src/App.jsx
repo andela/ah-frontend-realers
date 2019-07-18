@@ -14,6 +14,7 @@ import SignUp from './auth/signup/components/SignUp';
 import AllArticles from './Articles/components/AllArticles';
 import ResetPasswordContainer from './auth/passwordreset/components/ResetComponent';
 import store from './Mainstore/Store';
+import CreateArticle from './Articles/containers/CreateArticle';
 import history from './commons/history';
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/articles" component={AllArticles} />
           <Route path="/reset" component={ResetPasswordContainer} />
           <Route path="/search/:searchkey" exact component={Search} />
+          <Route path="/create-article" component={CreateArticle} />
         </Switch>
         <FooterSection />
       </Router>

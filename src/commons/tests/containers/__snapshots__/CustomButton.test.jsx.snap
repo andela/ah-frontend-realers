@@ -6,7 +6,7 @@ exports[`CustomButton Component should match the snapshot 1`] = `
     active={true}
     className="custom-btn"
     disabled={false}
-    href="/articles"
+    href="#"
     type="button"
     variant="primary"
   >
