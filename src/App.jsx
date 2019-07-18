@@ -13,6 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SignUp from './auth/signup/components/SignUp';
 import AllArticles from './Articles/components/AllArticles';
 import ResetPasswordContainer from './auth/passwordreset/components/ResetComponent';
+import ChangePasswordContainer from './auth/Passwordchange/containers/ChangePasswordContainer';
 import store from './Mainstore/Store';
 import history from './commons/history';
 
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/articles" component={AllArticles} />
           <Route path="/reset" component={ResetPasswordContainer} />
           <Route path="/search/:searchkey" exact component={Search} />
+          <Route path="/change" component={ChangePasswordContainer} />
         </Switch>
         <FooterSection />
       </Router>
