@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import HeaderSection from './commons/components/HeaderSection';
@@ -8,10 +9,13 @@ import Landing from './Landing/containers/Landing';
 import LoginContainer from './Login/containers/LoginContainer';
 import 'react-toastify/dist/ReactToastify.css';
 import SignUp from './auth/signup/components/SignUp';
+import AllArticles from './Articles/components/AllArticles';
+import store from './Mainstore/Store';
 
 export default function App() {
   return (
-    <Router>
+    <Provider store={store}>
+      <Router>
       <HeaderSection />
       <ToastContainer />
       <Route path="/login" exact component={LoginContainer} />
@@ -19,8 +23,10 @@ export default function App() {
         <Route path="/" exact component={Landing} />
         <Route path="/about" component={Landing} />
         <Route path="/signup" component={SignUp} />
+        <Route path="/articles" component={AllArticles} />        
       </Switch>
       <FooterSection />
-    </Router>
+    </Router> 
+    </Provider>
   );
 }

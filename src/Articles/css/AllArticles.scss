@@ -1,0 +1,19 @@
+@import '../../commons/assets/variables/font.scss';
+@import '../../commons/assets/variables/colors.scss';
+@import '../../commons/assets/variables/mixins.scss';
+
+.view-all-articles{
+  border-top: 1px solid $light-gray;
+  margin-bottom: 30px;
+
+  .container {
+    max-width: 1240px !important;
+    padding: 15px;
+  }
+
+  .no-articles {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+}
