@@ -1,0 +1,100 @@
+@import '../../commons/assets/variables/font.scss';
+@import '../../commons/assets/variables/colors.scss';
+
+    .article_title{
+        color: #00a4d3;
+        font-family:$source-san-font;
+        font-weight: light;
+        font-size: 40px;
+        margin-top:20px;
+    }
+    .myimage{
+        margin: auto;
+        width: 80%;
+        max-width: 100%; 
+        min-height: 259px; 
+        max-height: 500px; 
+    }
+    
+    .article_image {
+        max-width:100%;
+        max-height:400px;  
+    }
+    .article-content {
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+    }
+    
+    .article-content > p {
+        font-family: $source-san-font;
+        font-size: 20px;
+        text-align: justify;
+    }
+    
+    .flex-container {
+     display: flex;
+     justify-content: space-between;
+     width: 80%;
+     margin: auto;
+    }
+    
+    .header {
+     width: 80%;
+     margin: auto;
+    }
+    
+    .top-div-inner {
+        width: 400px;
+    }
+    .ratings-image {
+        height:50px;
+        width: 100px;
+    }
+    
+    .custom-ratings {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 10px;
+    }
+    
+    .custom-profile {
+        display: flex;
+        justify-content: flex-start;
+      }
+    
+      .avarta-image {
+          height: 100px;
+          width: 100px;
+      }
+    
+      .author-info {
+        margin-left: 20px;
+      }
+    
+      .follow-button {
+          border-radius: 5px;
+          border: 1px solid blue;
+      }
+    
+      .author-name-color {
+          color: #606060;
+      }
+    
+      .date-color {
+        color: #606060; 
+      }
+    
+      .dv-star-rating-star {
+        font-size: 1.2em !important;
+        margin-left: -3px;
+        padding: 2px 2px 0 2px;
+      }
+    
+      .dv-star-rating-full-star {
+        color: #121111 !important;
+      }
+    
+      .dv-star-rating-empty-star {
+        color: $light-gray !important;
+      }

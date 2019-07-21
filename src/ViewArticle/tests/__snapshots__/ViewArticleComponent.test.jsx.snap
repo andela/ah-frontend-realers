@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewArticleComponent render the viewArticle component 1`] = `ShallowWrapper {}`;
