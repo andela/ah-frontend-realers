@@ -23,7 +23,7 @@
     width: 428px;
   }
 
-  button.search-btn {
+  button.search-btn, a {
     background-color: $primary-blue;
     border-color: $border-color;
     border-left: 1px solid $border-color;
@@ -33,12 +33,21 @@
     width: 158px;
     }
 
+  a {
+    line-height: 40px;
+
+    &:hover {
+      background: $primary-blue;
+      text-decoration: none;
+    }
+  }
+
   .mr-sm-2,
   .mx-sm-2 {
     margin-right: 0 !important;
   }
 
-  input {
+  input, a {
     &:focus {
       border: 0;
       box-shadow: none;

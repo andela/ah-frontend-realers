@@ -7,6 +7,7 @@ import signUpReducer from '../auth/signup/redux/reducer/signUpReducer';
 import allArticleReducer from '../Articles/redux/reducers/allArticlesReducer';
 import loginReducer from '../auth/Login/redux/reducers/loginReducer';
 import resetPasswordReducer from '../auth/passwordreset/redux/reducers/postReducer';
+import SearchArticleReducer from '../Articles/redux/reducers/SearchArticleReducer';
 
 const reducers = combineReducers({
   latest_articles: LatestArticleReducer,
@@ -14,7 +15,7 @@ const reducers = combineReducers({
   login: loginReducer,
   signUpUser: signUpReducer,
   allArticleReducer,
-
+  searchedArticles: SearchArticleReducer,
 });
 
 const enhancers = compose(
