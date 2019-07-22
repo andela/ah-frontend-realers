@@ -176,6 +176,10 @@ exports[`App Component should match the snapshot 1`] = `
         }
         path="/article/:slug"
       />
+      <Route
+        component={[Function]}
+        path="/profiles"
+      />
     </Switch>
     <FootSection />
   </BrowserRouter>
