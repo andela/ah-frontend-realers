@@ -12,6 +12,7 @@ import Search from './Articles/containers/SearchArticles';
 import ViewArticleContainer from './ViewArticle/container/ViewArticleContainer';
 import 'react-toastify/dist/ReactToastify.css';
 import SignUp from './auth/signup/components/SignUp';
+import UserProfile from './Profiles/components/UserProfile';
 import AllArticles from './Articles/components/AllArticles';
 import ResetPasswordContainer from './auth/passwordreset/components/ResetComponent';
 import store from './Mainstore/Store';
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/search/:searchkey" exact component={Search} />
           <Route path="/create-article" component={CreateArticle} />
           <Route path="/article/:slug" component={ViewArticleContainer} />
+          <Route path="/profiles" component={UserProfile} />
         </Switch>
         <FooterSection />
       </Router>

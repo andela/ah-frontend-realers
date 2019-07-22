@@ -1,0 +1,86 @@
+@import '../../commons/assets/variables/colors.scss';
+@import '../../commons/assets/variables/font.scss';
+.profile-container{
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user-name-image{
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    .follow{
+        width: 150px;
+        height: 50px;
+        border-radius: 4px;
+        border-color: $primary-blue;
+        margin-left: 50px;
+    }
+
+    .follow-button {
+        font-size: 20px;
+        margin-right: 10%;
+    }
+
+    .bio p {
+        font-size: 30px;
+        margin-left: 15%;
+    }
+    .bio div {
+        width: 40%;
+        font-size: 20px;
+        margin-left: 20%;
+    }
+
+    .date-of-birth, .gender, .location, .comments, .hearts {
+        display: flex;
+        font-size: 20px;
+        margin-left: 60px;
+        margin-top: 8%;
+    }
+
+    .date-of-birth div, .gender div, .location div, .hearts p{
+        margin-left: 20px;
+    }
+
+    .gender, .location, .hearts, .comments {
+        margin-top: 1%;
+    }
+
+    .hearts span{
+        color: blue;
+    }
+
+    .edit button {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 4px;
+        background-color: $primary-color;
+        color: $dark
+    }
+
+    .edit {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .bio-other-details {
+        display: flex;
+        justify-content: center;
+    }
+
+    .other_details {
+        margin-right: 30px;
+        width: 150%;
+        margin-top: 30px;
+    }
+}
