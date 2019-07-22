@@ -35,7 +35,7 @@ export default function App() {
           <Route path="/search/:searchkey" exact component={Search} />
           <Route path="/create-article" component={CreateArticle} />
           <Route path="/article/:slug" component={ViewArticleContainer} />
-          <Route path="/profile" component={UserProfile} />
+          <Route path="/profiles" component={UserProfile} />
         </Switch>
         <FooterSection />
       </Router>
