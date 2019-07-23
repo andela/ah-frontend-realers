@@ -3,9 +3,9 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import LatestArticleReducer from '../Landing/redux/reducers/latestArticlesReducer';
-import loginReducer from '../Login/redux/reducers/loginReducer';
 import signUpReducer from '../auth/signup/redux/reducer/signUpReducer';
 import allArticleReducer from '../Articles/redux/reducers/allArticlesReducer';
+import loginReducer from '../auth/Login/redux/reducers/loginReducer';
 
 
 const reducers = combineReducers({

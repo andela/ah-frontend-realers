@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../LoginStyles/login.scss';
+import FacebookButton from '../../socialAuth/facebook/components/Facebook';
+import GoogleButton from '../../socialAuth/google/components/Google';
 
 
 const Loader = require('react-loader');
@@ -68,10 +70,9 @@ const Login = (
           </div>
           <p className="mypara2">
             Or signup with
-            <a href="/" className="fa fa-facebook" />
-            <a href="/" className="fa fa-twitter" />
-            <a href="/" className="fa fa-google" />
           </p>
+          <FacebookButton />
+          <GoogleButton />
         </Loader>
 
       </form>

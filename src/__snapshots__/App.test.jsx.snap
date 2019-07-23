@@ -12,7 +12,28 @@ exports[`App Component should match the snapshot 1`] = `
     }
   }
 >
-  <BrowserRouter>
+  <BrowserRouter
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
     <HeaderSection />
     <ToastContainer
       autoClose={5000}

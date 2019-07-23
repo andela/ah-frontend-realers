@@ -73,19 +73,9 @@ exports[`Login  matches snapshot 1`] = `
           className="mypara2"
         >
           Or signup with
-          <a
-            className="fa fa-facebook"
-            href="/"
-          />
-          <a
-            className="fa fa-twitter"
-            href="/"
-          />
-          <a
-            className="fa fa-google"
-            href="/"
-          />
         </p>
+        <FacebookButton />
+        <GoogleButton />
       </Component>
     </form>
   </div>
