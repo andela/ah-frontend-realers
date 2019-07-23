@@ -1,85 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App Component should match the snapshot 1`] = `
-<BrowserRouter>
-  <HeaderSection />
-  <ToastContainer
-    autoClose={5000}
-    bodyClassName={null}
-    className={null}
-    closeButton={
-      <CloseButton
-        ariaLabel="close"
-      />
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
     }
-    closeOnClick={true}
-    draggable={true}
-    draggablePercent={80}
-    hideProgressBar={false}
-    newestOnTop={false}
-    pauseOnFocusLoss={true}
-    pauseOnHover={true}
-    position="top-right"
-    progressClassName={null}
-    progressStyle={null}
-    role="alert"
-    rtl={false}
-    style={null}
-    toastClassName={null}
-    transition={[Function]}
-  />
-  <Route
-    component={
-      Object {
-        "$$typeof": Symbol(react.memo),
-        "WrappedComponent": [Function],
-        "compare": null,
-        "displayName": "Connect(LoginContainer)",
-        "type": [Function],
+  }
+>
+  <BrowserRouter>
+    <HeaderSection />
+    <ToastContainer
+      autoClose={5000}
+      bodyClassName={null}
+      className={null}
+      closeButton={
+        <CloseButton
+          ariaLabel="close"
+        />
       }
-    }
-    exact={true}
-    path="/login"
-  />
-  <Switch>
+      closeOnClick={true}
+      draggable={true}
+      draggablePercent={80}
+      hideProgressBar={false}
+      newestOnTop={false}
+      pauseOnFocusLoss={true}
+      pauseOnHover={true}
+      position="top-right"
+      progressClassName={null}
+      progressStyle={null}
+      role="alert"
+      rtl={false}
+      style={null}
+      toastClassName={null}
+      transition={[Function]}
+    />
     <Route
       component={
         Object {
           "$$typeof": Symbol(react.memo),
           "WrappedComponent": [Function],
           "compare": null,
-          "displayName": "Connect(Landing)",
+          "displayName": "Connect(LoginContainer)",
           "type": [Function],
         }
       }
       exact={true}
-      path="/"
+      path="/login"
     />
-    <Route
-      component={
-        Object {
-          "$$typeof": Symbol(react.memo),
-          "WrappedComponent": [Function],
-          "compare": null,
-          "displayName": "Connect(Landing)",
-          "type": [Function],
+    <Switch>
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(Landing)",
+            "type": [Function],
+          }
         }
-      }
-      path="/about"
-    />
-    <Route
-      component={
-        Object {
-          "$$typeof": Symbol(react.memo),
-          "WrappedComponent": [Function],
-          "compare": null,
-          "displayName": "Connect(SignUpUserForm)",
-          "type": [Function],
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(Landing)",
+            "type": [Function],
+          }
         }
-      }
-      path="/signup"
-    />
-  </Switch>
-  <FootSection />
-</BrowserRouter>
+        path="/about"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(SignUpUserForm)",
+            "type": [Function],
+          }
+        }
+        path="/signup"
+      />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(AllArticles)",
+            "type": [Function],
+          }
+        }
+        path="/articles"
+      />
+    </Switch>
+    <FootSection />
+  </BrowserRouter>
+</Provider>
 `;

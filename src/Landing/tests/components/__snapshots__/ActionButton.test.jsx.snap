@@ -8,7 +8,7 @@ exports[`ActionButton Component should match the snapshot 1`] = `
   >
     <CustomButton
       btnlabel="See More Articles"
-      link="/article"
+      link="/articles"
     />
   </Col>
 </Bootstrap(Row)>

@@ -6,7 +6,7 @@ export default function ActionButton() {
   return (
     <Row>
       <Col sm={12} className="call-for-action">
-        <CustomButton btnlabel="See More Articles" link="/article" />
+        <CustomButton btnlabel="See More Articles" link="/articles" />
       </Col>
     </Row>
   );
