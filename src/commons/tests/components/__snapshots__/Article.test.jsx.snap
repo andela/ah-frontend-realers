@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article Component should match the snapshot 1`] = `
+<div>
+  <Card
+    body={false}
+    className="article-box"
+  >
+    <CardImg
+      variant="top"
+    />
+    <CardBody>
+      <Link
+        to="/article/undefined"
+      >
+        <CardTitle />
+      </Link>
+      <CardText />
+      <StarRatingComponent
+        editing={false}
+        emptyStarColor="#333"
+        name="rate2"
+        renderStarIcon={[Function]}
+        starColor="#ffb400"
+        starCount={5}
+      />
+      <Bootstrap(Row)>
+        <Col
+          className="left"
+          xs={6}
+        >
+          <CardLink
+            href="#"
+          >
+            author username
+          </CardLink>
+        </Col>
+        <Col
+          className="right"
+          xs={6}
+        >
+          <CardLink
+            href="#"
+          />
+        </Col>
+      </Bootstrap(Row)>
+    </CardBody>
+  </Card>
+</div>
+`;

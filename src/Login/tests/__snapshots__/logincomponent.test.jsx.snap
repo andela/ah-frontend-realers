@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login  matches snapshot 1`] = `
+<div
+  className="Login-container"
+>
+  <div
+    className="heading"
+  >
+    <h1>
+      Login
+    </h1>
+  </div>
+  <div
+    className="myform"
+  >
+    <form>
+      <span />
+      <div
+        className="form-input"
+        id="errormessage"
+      >
+        <input
+          id="userEmail"
+          name="email"
+          onChange={[MockFunction]}
+          placeholder="Email"
+          required={true}
+          type="text"
+          value=""
+        />
+        <span />
+      </div>
+      <br />
+      <div
+        className="form-input"
+        id="errormessage"
+      >
+        <input
+          name="password"
+          onChange={[MockFunction]}
+          placeholder="Password"
+          type="password"
+          value=""
+        />
+      </div>
+      <p
+        className="mypara"
+      >
+        Forgot Password?
+      </p>
+      <br />
+      <Component
+        component="div"
+        loaded={true}
+        loadedClassName="loadedContent"
+        parentClassName="loader"
+      >
+        <div
+          className="form-input"
+        >
+          <button
+            disabled={false}
+            onClick={[MockFunction]}
+            type="button"
+          >
+            <span>
+              Login
+            </span>
+          </button>
+        </div>
+        <p
+          className="mypara2"
+        >
+          Or signup with
+          <a
+            className="fa fa-facebook"
+            href="/"
+          />
+          <a
+            className="fa fa-twitter"
+            href="/"
+          />
+          <a
+            className="fa fa-google"
+            href="/"
+          />
+        </p>
+      </Component>
+    </form>
+  </div>
+</div>
+`;

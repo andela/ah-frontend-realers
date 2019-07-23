@@ -1,0 +1,123 @@
+@import '../../../commons/assets/variables/font.scss';
+@import '../../../commons/assets/variables/colors.scss';
+
+.signup-container {
+  margin:10px 0 20px 0;
+
+  h1 {
+    color: $primary-color;
+    font-family: $lato-font;
+    font-weight: 100;
+    font-size: 24px;
+  }
+
+  .form {
+    min-height: 400px;
+    width: 544px;
+    border: $border-color-l 1px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+  }
+
+  .heading {
+    width: 387px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 99%;
+  }
+
+  .form input, button {
+    width: 294px;
+    height: 38px;
+    margin: 10px;
+
+  }
+  .email {
+    margin-top: 30px;
+  }
+  .form button {
+    margin-top: 20px;
+    background-color: #00a4d3;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-family: $lato-font;
+  }
+
+  ::placeholder{
+    color: $black;
+    font-family: "Source Sans Pro";
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  #errors {
+    margin-top: 0px;
+    color: #F00;
+  }
+
+  #errors_exist{
+      color: #F00;
+      margin-top: 10px;
+  }
+
+  #success {
+    margin-top: 20px;
+    padding-top: 10px;
+
+  }
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+      margin-left: 10px;
+      font-size: 23px;
+      width: 30px;
+      padding: 5px;
+      border-radius: 2px;
+      text-decoration: none;
+
+    }
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      margin-left: 20px;
+      font-size: 23px;
+      width: 30px;
+      padding: 5px;
+      border-radius: 2px;
+      text-decoration: none;
+
+
+    }
+    .fa-google{
+      color:#d34836;
+      margin-left: 3%;
+      font-size: 30px;
+      margin-top: 10px;
+      text-decoration: none;
+
+    }
+    .mypara2{
+      color: #00a4d3;
+      font-family: $lato-font;
+      font-weight:100;
+      font-size: 18px;
+    
+    }
+
+    .loader {
+      position: fixed;
+      top: 600px;
+      right: 0;
+      bottom: 600px;
+      left: 0;
+      background: white;
+     
+    }
+
+  }

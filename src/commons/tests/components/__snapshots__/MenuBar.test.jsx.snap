@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuBar Component should match the snapshot 1`] = `
+<Fragment>
+  <Nav
+    activeKey="/"
+    className="justify-content-center menu-section"
+    fill={false}
+    justify={false}
+  >
+    <Link
+      to="/"
+    >
+      <NavItem>
+        HOME
+      </NavItem>
+    </Link>
+    <Link
+      to="/latest"
+    >
+      <NavItem>
+        LATEST
+      </NavItem>
+    </Link>
+    <Link
+      to="/top"
+    >
+      <NavItem>
+        TOP
+      </NavItem>
+    </Link>
+    <Link
+      to="/about"
+    >
+      <NavItem>
+        ABOUT
+      </NavItem>
+    </Link>
+  </Nav>
+</Fragment>
+`;

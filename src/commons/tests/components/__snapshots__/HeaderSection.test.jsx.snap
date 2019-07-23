@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderSection Component should match the snapshot 1`] = `
+<header>
+  <NavSection />
+  <MenuBar />
+  <Search />
+</header>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionButton Component should match the snapshot 1`] = `
+<Bootstrap(Row)>
+  <Col
+    className="call-for-action"
+    sm={12}
+  >
+    <CustomButton
+      btnlabel="See More Articles"
+      link="/article"
+    />
+  </Col>
+</Bootstrap(Row)>
+`;
