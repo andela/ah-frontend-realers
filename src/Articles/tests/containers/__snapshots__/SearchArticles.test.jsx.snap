@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchArticles Component should match the snapshot 1`] = `
+<div
+  className="search-articles"
+>
+  <Container
+    fluid={false}
+  >
+    <div>
+      <h2
+        className="section-title"
+      >
+        Search Results For - 'article' 
+      </h2>
+      <div
+        className="article-display-box"
+      >
+        <Article
+          article={
+            Object {
+              "author": Object {
+                "bio": "",
+                "birth_date": null,
+                "email": "cedric.lusiba@andela.com",
+                "first_name": "",
+                "gender": "",
+                "image": "",
+                "last_name": "",
+                "location": "",
+                "username": "cdv1x",
+              },
+              "average_rating": 0,
+              "body": "strinfghjhhg",
+              "createdAt": "2019-06-19T09:16:23.749462Z",
+              "description": "string",
+              "image": "http://string.com",
+              "slug": "string",
+              "tagName": Array [],
+              "title": "string",
+              "updatedAt": "2019-06-19T09:16:23.749489Z",
+            }
+          }
+          key="string"
+        />
+        <Article
+          article={
+            Object {
+              "author": Object {
+                "bio": "",
+                "birth_date": null,
+                "email": "alexxsanya@gmail.com",
+                "first_name": "Alex",
+                "gender": "male",
+                "image": "",
+                "last_name": "Sanya",
+                "location": "",
+                "username": "alexxsanya",
+              },
+              "average_rating": 0,
+              "body": "You can't miss this tdf friday in ruby",
+              "createdAt": "2019-06-20T13:17:46.909484Z",
+              "description": "day of the week",
+              "image": "https://via.placeholder.com/236x124",
+              "slug": "friday",
+              "tagName": Array [],
+              "title": "it tgf friday",
+              "updatedAt": "2019-06-20T13:17:46.909533Z",
+            }
+          }
+          key="friday"
+        />
+      </div>
+    </div>
+  </Container>
+</div>
+`;

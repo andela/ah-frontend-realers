@@ -8,6 +8,7 @@ import HeaderSection from './commons/components/HeaderSection';
 import FooterSection from './commons/components/FooterSection';
 import Landing from './Landing/containers/Landing';
 import LoginContainer from './auth/Login/containers/LoginContainer';
+import Search from './Articles/containers/SearchArticles';
 import 'react-toastify/dist/ReactToastify.css';
 import SignUp from './auth/signup/components/SignUp';
 import AllArticles from './Articles/components/AllArticles';
@@ -19,7 +20,6 @@ export default function App() {
   return (
     <Provider store={store}>
       <Router history={history}>
-
         <HeaderSection />
         <ToastContainer />
         <Route path="/login" exact component={LoginContainer} />
@@ -29,6 +29,7 @@ export default function App() {
           <Route path="/signup" component={SignUp} />
           <Route path="/articles" component={AllArticles} />
           <Route path="/reset" component={ResetPasswordContainer} />
+          <Route path="/search/:searchkey" exact component={Search} />
         </Switch>
         <FooterSection />
       </Router>

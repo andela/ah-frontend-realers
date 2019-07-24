@@ -1,0 +1,22 @@
+@import '../../commons/assets/variables/font.scss';
+@import '../../commons/assets/variables/colors.scss';
+
+.search-articles  {
+  border-top: 1px solid $light-gray;
+  min-height: 250px;
+  padding-top: 10px;
+
+  .error-box {
+    margin-top: 80px;
+  }
+
+  .section-title {
+    color: $primary-blue;
+    font-family: $lato-font;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+}

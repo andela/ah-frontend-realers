@@ -48,16 +48,21 @@ exports[`Search Component should match the snapshot 1`] = `
     </InputGroupPrepend>
     <Form
       inline={true}
+      onSubmit={[Function]}
     >
       <FormControl
         className="mr-sm-2 search-input"
+        onChange={[Function]}
         placeholder="Search articles by tag, title or author ..."
+        required={true}
         type="text"
+        value=""
       />
       <Button
         active={false}
         className="search-btn"
         disabled={false}
+        href="/search/"
         type="button"
         variant="primary"
       >
