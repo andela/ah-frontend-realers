@@ -12,8 +12,12 @@ const allArticleReducer = (state = initialState, action) => {
       return {
         ...state,
         items: action.payload,
+        count: action.count,
+        next: action.next,
+        previous: action.previous,
         isRetrieving: false,
         message: 'All Articles fetched',
+
       };
     case BEGIN_GETTING_ARTICLES:
       return {

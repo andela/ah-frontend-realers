@@ -5,17 +5,36 @@ import Article from "../../commons/components/Article";
 import { connect } from "react-redux";
 import getAllArticles from "../redux/actions/AllArticlesActions";
 import '../CSS/AllArticles.scss';
+import Pagination from './paginationComponent';
 
 export class AllArticles extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pageNumber: 1,
+    };
+  }
   componentDidMount() {
     const { getArticles } = this.props;
     getArticles();
   }
+
+  changePage = (apiCallUrl, increaseOrDecreasePageNumber ) => {
+    const { getArticles } = this.props;
+    const { pageNumber } = this.state;
+    this.setState({
+      pageNumber: pageNumber + increaseOrDecreasePageNumber
+    });
+
+    getArticles(apiCallUrl);
+  };
   render() {
-    const { items } = this.props
+    const { items, count, next, previous } = this.props
+    const { pageNumber } = this.state
     return (
       <div className='view-all-articles'>
         <Container>
+          <div className="myArticlu">
           {items.length != 0 ? (
             <div className='article-display-box'>
               {items.map(article => (
@@ -25,6 +44,13 @@ export class AllArticles extends Component {
           ) : (
             <h3 className='no-articles'>No Articles Available</h3>
           )}
+          </div>
+          <Pagination 
+            paginate={this.changePage}
+            currentPage={pageNumber}
+            count={count}
+            next={next}
+            previous={previous}/>
         </Container>
       </div>
     );
@@ -33,22 +59,28 @@ export class AllArticles extends Component {
 
 AllArticles.propTypes = {
   allArticles: PropTypes.any,
-  isRetrieving: PropTypes.bool
+  isRetrieving: PropTypes.bool,
+  count: PropTypes.number,
+  next: PropTypes.string,
+  previous: PropTypes.string,
 };
 
 AllArticles.defaultProps = {
   allArticles: [],
-  isRetrieving: false
+  isRetrieving: false,
+  count: 0,
+  next: "",
+  previous: "",
 };
 
 export const mapStateToProps = state => {
-  const { isRetrieving, items } = state.allArticleReducer;
-  return { isRetrieving, items };
+  const { isRetrieving, items, count, next, previous } = state.allArticleReducer;
+  return { isRetrieving, items, count, next, previous };
 };
 
 export const mapDispatchToProps = dispatch => ({
-  getArticles: () => {
-    dispatch(getAllArticles());
+  getArticles: (url) => {
+    dispatch(getAllArticles(url));
   }
 });
 
