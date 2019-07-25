@@ -47,7 +47,11 @@ exports[`Login  matches snapshot 1`] = `
       <p
         className="mypara"
       >
-        Forgot Password?
+        <a
+          href="/reset"
+        >
+          Forgot Password?
+        </a>
       </p>
       <br />
       <Component

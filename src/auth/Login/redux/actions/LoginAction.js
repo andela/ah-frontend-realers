@@ -3,7 +3,7 @@ import axios from 'axios';
 import loginTypes from '../types';
 import loginUrl from '../loginUrls';
 
-const loginAction = (userdata, props) => (dispatch) => {
+const loginAction = (userdata) => (dispatch) => {
   dispatch({
     type: loginTypes.IS_LOGGING_IN,
   });
@@ -16,7 +16,7 @@ const loginAction = (userdata, props) => (dispatch) => {
         type: loginTypes.LOGIN_SUCCESS,
         payload: res.data.user,
       });
-      props.history.push('/');
+      window.location = '/';
     })
     .catch((error) => {
       dispatch({

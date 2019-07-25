@@ -60,7 +60,7 @@ const Login = (
               errors.userPassword && (<div className="errors">{errors.userPassword}</div>)
             }
         </div>
-        <p className="mypara">Forgot Password?</p>
+        <p className="mypara"><a href="/reset">Forgot Password?</a></p>
         <br />
         <Loader loaded={!isLoading}>
           <div className="form-input">

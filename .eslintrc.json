@@ -9,6 +9,7 @@
       "arrow-parens":0,
       "arrow-body-style":0,
       "no-named-as-default":0,
+      "no-shadow": "off",
       "jsx-a11y/anchor-is-valid":["enabled", "never"],
       "react/button-has-type":["enabled", "never"],
       "react/no-array-index-key":["enabled", "never"],

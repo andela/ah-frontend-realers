@@ -21,6 +21,67 @@ header {
     }
   }
 
+  .rounded-circle {
+    background-color: $black;
+    border: 1px solid $light-gray;
+    color: transparent;
+  }
+
+  .profile-photo {
+    cursor: pointer;
+    margin-right: -25px;
+  }
+
+  .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    color: $primary-color;
+    left: -150px;
+    padding: 0;
+    top: 100%;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    .dropdown-item.profile-name {
+      background-color: $black;
+      color: $white;
+      padding: .25rem 1.5rem;
+      text-align: inherit;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: $black;
+      }
+
+    }
+
+    .dropdown-item {
+
+      a {
+        background: transparent;
+        color: $white;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background: $primary-color;
+        color: $white;
+      }
+    }
+  }
+
+  .dropdown {
+    button {
+      background-color: transparent !important;
+      border-color: transparent !important;
+      color: transparent !important;
+      cursor: pointer;
+    }
+
+    .dropdown-toggle:focus {
+      box-shadow: 0 0 0 0 $white !important;
+    }
+
+  }
 }
 
 
