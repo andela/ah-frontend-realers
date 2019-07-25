@@ -34,7 +34,7 @@ exports[`App Component should match the snapshot 1`] = `
       }
     }
   >
-    <HeaderSection />
+    <withRouter(HeaderSection) />
     <ToastContainer
       autoClose={5000}
       bodyClassName={null}
@@ -178,7 +178,7 @@ exports[`App Component should match the snapshot 1`] = `
       />
       <Route
         component={[Function]}
-        path="/profiles"
+        path="/profile"
       />
     </Switch>
     <FootSection />

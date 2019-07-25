@@ -21,5 +21,4 @@ CustomButton.defaultProps = {
   btnlabel: 'stranger',
   link: '#',
 };
-
 export default CustomButton;

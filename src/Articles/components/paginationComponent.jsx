@@ -1,15 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Button from "../../commons/components/Button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from '../../commons/components/Button';
 import '../CSS/articlePagination.scss';
 
-const Pagination = ({ paginate, currentPage, count, next, previous }) => {
+const Pagination = ({
+  paginate, currentPage, count, next, previous,
+}) => {
   const numberOfPages = Math.ceil(count / 6);
   return (
-    <div className='paginate-article'>
+    <div className="paginate-article">
       <Button
-        buttonName=''
-        buttonClass='fa fa-backward'
+        buttonName=""
+        buttonClass="fa fa-backward"
         buttonEvent={e => {
           e.preventDefault();
           paginate(previous, -1);
@@ -18,14 +20,16 @@ const Pagination = ({ paginate, currentPage, count, next, previous }) => {
       />
       <span>
         {currentPage || 1}
-        {" "}
-        {"/"}
-        {" "}
-        {numberOfPages} {"pages "}
+        {' '}
+        {'/'}
+        {' '}
+        {numberOfPages}
+        {' '}
+        {'pages '}
       </span>
       <Button
-        buttonName=''
-        buttonClass='fa fa-forward'
+        buttonName=""
+        buttonClass="fa fa-forward"
         buttonEvent={e => {
           e.preventDefault();
           paginate(next, 1);
@@ -37,8 +41,8 @@ const Pagination = ({ paginate, currentPage, count, next, previous }) => {
 };
 
 Pagination.defaultProps = {
-  next: "",
-  previous: ""
+  next: '',
+  previous: '',
 };
 
 Pagination.propTypes = {
@@ -46,7 +50,7 @@ Pagination.propTypes = {
   currentPage: PropTypes.number.isRequired,
   count: PropTypes.number.isRequired,
   previous: PropTypes.string,
-  paginate: PropTypes.func.isRequired
+  paginate: PropTypes.func.isRequired,
 };
 
 export default Pagination;
