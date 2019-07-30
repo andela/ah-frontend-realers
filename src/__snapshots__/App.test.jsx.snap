@@ -164,6 +164,18 @@ exports[`App Component should match the snapshot 1`] = `
         }
         path="/create-article"
       />
+      <Route
+        component={
+          Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(ArticleContainer)",
+            "type": [Function],
+          }
+        }
+        path="/article/:slug"
+      />
     </Switch>
     <FootSection />
   </BrowserRouter>

@@ -9,6 +9,7 @@ import FooterSection from './commons/components/FooterSection';
 import Landing from './Landing/containers/Landing';
 import LoginContainer from './auth/Login/containers/LoginContainer';
 import Search from './Articles/containers/SearchArticles';
+import ViewArticleContainer from './ViewArticle/container/ViewArticleContainer';
 import 'react-toastify/dist/ReactToastify.css';
 import SignUp from './auth/signup/components/SignUp';
 import AllArticles from './Articles/components/AllArticles';
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/reset" component={ResetPasswordContainer} />
           <Route path="/search/:searchkey" exact component={Search} />
           <Route path="/create-article" component={CreateArticle} />
+          <Route path="/article/:slug" component={ViewArticleContainer} />
         </Switch>
         <FooterSection />
       </Router>

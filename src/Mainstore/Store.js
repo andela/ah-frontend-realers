@@ -3,6 +3,7 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import LatestArticleReducer from '../Landing/redux/reducers/latestArticlesReducer';
+import ViewArticlereducer from '../ViewArticle/redux/reducers/ViewArticlereducer';
 import signUpReducer from '../auth/signup/redux/reducer/signUpReducer';
 import allArticleReducer from '../Articles/redux/reducers/allArticlesReducer';
 import loginReducer from '../auth/Login/redux/reducers/loginReducer';
@@ -18,6 +19,7 @@ const reducers = combineReducers({
   allArticleReducer,
   searchedArticles: SearchArticleReducer,
   resetPassword: resetPasswordReducer,
+  viewAnArtricle: ViewArticlereducer,
 });
 
 const enhancers = compose(
