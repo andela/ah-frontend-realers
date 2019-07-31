@@ -11,7 +11,7 @@ export const SignUpUserForm = ({ signUpUser: signUp, isLoading }) => {
   const [fields, setFields] = useState({ username: '', email: '', password: '' });
   const [touched, setTouched] = useState({ username: false, email: false, password: false });
 
-  const onSubmit = (e) =>  {
+  const onSubmit = (e) => {
     const userData = {
       user: {
         email: fields.email,

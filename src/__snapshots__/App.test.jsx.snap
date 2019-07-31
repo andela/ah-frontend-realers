@@ -178,7 +178,11 @@ exports[`App Component should match the snapshot 1`] = `
       />
       <Route
         component={[Function]}
-        path="/profiles"
+        path="/profile"
+      />
+      <Route
+        component={[Function]}
+        path="/editprofile"
       />
     </Switch>
     <FootSection />

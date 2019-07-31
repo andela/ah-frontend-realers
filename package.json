@@ -67,10 +67,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-<<<<<<< HEAD
-=======
-    "@material-ui/icons": "^4.2.1",
->>>>>>> feat(#166187819) view/edit profiles
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "enzyme": "^3.10.0",

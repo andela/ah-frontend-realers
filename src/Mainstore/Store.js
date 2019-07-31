@@ -11,6 +11,7 @@ import resetPasswordReducer from '../auth/passwordreset/redux/reducers/postReduc
 import SearchArticleReducer from '../Articles/redux/reducers/SearchArticleReducer';
 import CreateArticleReducer from '../Articles/redux/reducers/CreateArticleReducer';
 import userProfileReducer from '../Profiles/redux/reducers/UserProfileReducer';
+import editProfileReducer from '../Profiles/redux/reducers/EditProfileReducer';
 
 const reducers = combineReducers({
   latest_articles: LatestArticleReducer,
@@ -22,6 +23,7 @@ const reducers = combineReducers({
   resetPassword: resetPasswordReducer,
   viewAnArtricle: ViewArticlereducer,
   userProfiles: userProfileReducer,
+  editProfile: editProfileReducer,
 });
 
 const enhancers = compose(

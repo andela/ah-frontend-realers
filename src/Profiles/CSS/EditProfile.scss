@@ -1,0 +1,79 @@
+@import '../../commons/assets/variables/colors.scss';
+@import '../../commons/assets/variables/font.scss';
+
+.edit-container {
+    h3 {
+        text-align: center;
+        margin: 10px;
+        font-size: 24px;
+        color: $primary-color;
+        font-family: $lato-font
+    }
+
+    .name input, .loc-gender input, .d-o-b input {
+        width: 370px;
+        height: 40px;
+    }
+    ::placeholder{
+        font-size: 24px;
+    }
+    .name, .loc-gender {
+        text-align: center;
+    }
+
+    textarea {
+        border-color: $primary-color;
+        width: 750px;
+        height: 100px;
+    }
+
+    .textarea, .d-o-b  {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    input#lastname {
+        margin-left: 5px;
+    }
+    input#firstname {
+        margin-right: 5px;
+    }
+
+    .loc-gender input#location {
+        margin-right: 5px;
+    }
+
+    .loc-gender input#gender{
+        margin-left: 5px;
+    }
+    .loc-gender {
+        margin-top: 10px;
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 4px;
+        background-color: $primary-color;
+        margin-top: 20px;
+        color: $dark;
+    }
+
+    .d-o-b-button{
+        display: flex;
+        justify-content: space-between;
+        width: 750px;
+        margin-left: 24%;
+        margin-bottom: 10px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #gender-error {
+        width: 15%;
+        margin-left: 55%;
+    }
+}
