@@ -11,7 +11,7 @@ import logo from '../assets/images/logo.png';
 
 const token = localStorage.getItem('user_token');
 const username = localStorage.getItem('username');
-export default function NavSection() {
+export default function NavSection({ logOut }) {
   return (
     <>
       <Navbar className="nav-section">
@@ -45,7 +45,7 @@ export default function NavSection() {
                       <Dropdown.Item eventKey="3" href="/create-article">Write an article</Dropdown.Item>
                       <Dropdown.Item eventKey="3" href="/favorite-article">My Favorite Articles</Dropdown.Item>
                       <Dropdown.Divider />
-                      <Dropdown.Item eventKey="4">Logout</Dropdown.Item>
+                      <Dropdown.Item eventKey="4" onClick={logOut}>Logout</Dropdown.Item>
                     </DropdownButton>
                   </ButtonToolbar>
                 </>

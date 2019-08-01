@@ -35,6 +35,12 @@ export default function (state = initialState, { type, payload }) {
         login_failed: false,
         isLoading: true,
       };
+    case loginTypes.LOGOUT_SUCCESS:
+      return {
+        ...state,
+        is_logging_in: false,
+        isloggedIn: false,
+      };
     default:
       return state;
   }
