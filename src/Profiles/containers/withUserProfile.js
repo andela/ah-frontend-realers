@@ -24,6 +24,7 @@ export default compose(
     birth_date,
     place,
     bio,
+    image,
     ...rest
   }) => ({
     user: {
@@ -32,6 +33,7 @@ export default compose(
       dateOfBirth: birth_date,
       place,
       bio,
+      image,
       ...rest,
     },
   })),
