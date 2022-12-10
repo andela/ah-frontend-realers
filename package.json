@@ -71,7 +71,7 @@
     "bootstrap": "^4.3.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fetch-mock": "^7.3.6",
     "file-loader": "^4.0.0",
     "firebase": "^6.3.1",
